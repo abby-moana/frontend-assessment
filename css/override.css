@@ -1,23 +1,63 @@
-.hero-copy {
+.hero-sections-wrapper {
     display: flex;
-    flex-direction: row;
 }
-.hero.hero-unit-moon-exploration,
-.new-section {
-    width: 50%;
-}
-@media (max-width: 768px) {
 
-    body {
+.hero {
+    flex: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a {
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+}
+
+body.home .hero.hero-unit-space-exploration {
+    background-image: url("../images/final-frontier_medium.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body.home .hero.hero-unit-moon-exploration {
+    background-image: url("../images/luna_medium.jpg") !important;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-copy {
+    position: relative !important;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    display: inline-block; 
+    text-align: center;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+    .hero-sections-wrapper {
         flex-direction: column;
     }
 
-    .new-section {
-        order: -1; 
+    .hero {
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 
-    .hero.hero-unit-moon-exploration,
-    .new-section {
+    .hero-copy {
         width: 100%;
+        text-align: center;
     }
 }
+
