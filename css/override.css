@@ -1,0 +1,23 @@
+.hero-copy {
+    display: flex;
+    flex-direction: row;
+}
+.hero.hero-unit-moon-exploration,
+.new-section {
+    width: 50%;
+}
+@media (max-width: 768px) {
+
+    body {
+        flex-direction: column;
+    }
+
+    .new-section {
+        order: -1; 
+    }
+
+    .hero.hero-unit-moon-exploration,
+    .new-section {
+        width: 100%;
+    }
+}
