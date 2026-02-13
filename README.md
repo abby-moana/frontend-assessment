@@ -8,3 +8,4 @@
 ## Notes
 - Original `style.css` is not modified.
 - No JavaScript is used.
+- Added a link on the new section that goes to http://space.com/ when you click "Space".
